@@ -4,3 +4,17 @@ $bg-dark-blue: hsl(217, 54%, 11%);
 $card-dark-blue: hsl(216, 50%, 16%);
 $line-dark-blue: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
+
+body {
+  background-color: $bg-dark-blue;
+  height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        width: 100%;
+    }
+}
