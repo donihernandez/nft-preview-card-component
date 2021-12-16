@@ -5,16 +5,134 @@ $card-dark-blue: hsl(216, 50%, 16%);
 $line-dark-blue: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 
+$layout-breakpoint-small: 960px;
+
 body {
   background-color: $bg-dark-blue;
   height: 100vh;
 }
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .card {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+
+  .card {
+    border-radius: 15px;
+    margin: 40px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: $card-dark-blue;
+
+    .card-img {
+    
+      img {
         width: 100%;
+        border-radius: 15px;
+      }
     }
+
+    .title {
+      color: $white;
+      font-weight: 600;
+    }
+
+    .description {
+      color: $soft-blue;
+      line-height: 1.5;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;;
+
+      .eth-count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .eth-icon {
+          margin-right: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 100%;
+          }
+        
+        }
+
+        p {
+          color: $cyan;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .days-count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .time-icon {
+          margin-right: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 100%;
+          }
+        
+        }
+
+        p {
+          color: $soft-blue;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      border-top: 1px solid $line-dark-blue;
+    }
+
+    .user-details {
+      display: flex;
+      align-items: center;
+
+      .user-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      p {
+        color: $soft-blue;
+
+        span {
+          color: $white;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  body {
+    height: 100%;
+  }
 }

@@ -13,9 +13,158 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
 }
 
 .container .card {
+  border-radius: 15px;
+  margin: 40px 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #14253d;
+}
+
+.container .card .card-img img {
   width: 100%;
+  border-radius: 15px;
+}
+
+.container .card .title {
+  color: white;
+  font-weight: 600;
+}
+
+.container .card .description {
+  color: #8bacda;
+  line-height: 1.5;
+}
+
+.container .card .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .details .eth-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .details .eth-count .eth-icon {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .details .eth-count .eth-icon img {
+  width: 100%;
+}
+
+.container .card .details .eth-count p {
+  color: #00fff7;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container .card .details .days-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .details .days-count .time-icon {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .details .days-count .time-icon img {
+  width: 100%;
+}
+
+.container .card .details .days-count p {
+  color: #8bacda;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container .card .line {
+  width: 100%;
+  border-top: 1px solid #2f415b;
+}
+
+.container .card .user-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .user-details .user-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.container .card .user-details .user-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .card .user-details p {
+  color: #8bacda;
+}
+
+.container .card .user-details p span {
+  color: white;
+}
+
+@media (min-width: 960px) {
+  body {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
